@@ -1,0 +1,179 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+
+.search-container input {
+    width: 100%;
+    max-width: 470px;
+    padding: 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    padding-right: 40px; /* space for the icon */
+}
+
+.search-container .icon {
+    /* position: absolute; */
+    margin-left: -28px;
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+    pointer-events: none;
+}
+
+.text-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 500px;
+}
+
+.header-txt {
+    text-align: start;
+}
+
+.btn {
+    display: flex;
+    flex-direction: row;
+}
+
+.details-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.details {
+    padding: 0%;
+    margin: 0;
+}
+
+.sub-heading {
+    font-size: large;
+}
+
+.sub-details {
+    font-size: small;
+}
+
+.flag_Img {
+    margin-right: 2.5%;
+}
+
+.country {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px;
+}
+
+.country img {
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+    max-width: 320px;
+}
+
+.btn-button, .btn-button2 {
+    margin: 5px;
+    padding: 8px;
+    border: solid 2pt;
+    font-weight: bold;
+    font-size: large;
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+.btn-button2{
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+.btn-button, .btn-button2:hover {
+    box-shadow: blue;
+}
+
+#countries-list {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .text-container {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .search-container input {
+        width: 70%;
+    }
+
+    .search-container .icon {
+        right: 20px; 
+    }
+
+    .header-txt {
+        text-align: center;
+        margin-right: auto;
+    }
+
+    .details-info {
+        flex-direction: column;
+    }
+
+    .btn {
+        flex-direction: column;
+    }
+
+    .country {
+        width: 90%;
+    }
+
+    #countries-list {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-container input {
+        width: 80%;
+    }
+
+    .country {
+        width: 90%;
+    }
+
+    #countries-list {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .search-container .icon {
+        right: 10px; 
+    }
+}
